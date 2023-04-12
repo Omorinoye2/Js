@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>title</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="/dist/output.css" rel="stylesheet">
+    <style type="text/tailwindcss">
+        .input{
+            @apply bg-gray-700 p-2 rounded-lg outline-none text-gray-300 focus:ring focus:ring-purple-500 shadow shadow-gray-500
+        }
+    </style>
+</head>
+<body class="w-fill h-screen bg-gradient-to-r from-gray-800 to-gray-900">
+<header class="w-full h-12 bg-orange-500">
+
+</header> 
+<form class="w-1/2 mx-auto mt-10" method="POST">
+    <div class="flex flex-col space-y-4 p-2">
+        <label id="fullnamelabel" for="fullname" class="text-gray-300">Full name</label>
+        <input id="fullname" placeholder="Your full name" 
+         name="fullname" class="p-2 bg-gray-700 text-gray-300 outline-none p-2 rounded-lg" type="text">
+    </div>
+    <div class="flex flex-col space-y-4 p-2">
+        <label for="email" class="text-gray-300" id="emaillabel">Email</label>
+         <input placeholder="Your Email" name="Email" class="p-2 bg-gray-700 text-gray-300 outline-none p-2 rounded-lg" type="email">
+    </div>
+        
+    <div  class="flex flex-col space-y-4 p-2">
+        <label id="textarearlabel" for="Message" class="text-gray- 
+         300">Message</label>
+        <textarea id="textarear" placeholder="Enter you message here..." 
+         name="Message" class=" bg-gray-700 text-gray-300 
+          outline-none p-2 rounded-lg rows-5" type="text">
+        </textarea>    
+    </div>
+    <div class="p-2">
+        <button type="button" class=" bg-blue-600 px-8 py-2 text-gray-50 rounded-md fond-semibold  " >Send</button>
+    </div>
+</form>
+<script src="./index.js"></script>
+</body>
+</html>
